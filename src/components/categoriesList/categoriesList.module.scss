@@ -1,0 +1,17 @@
+.categoriesList{
+    display: flex;
+    width: 82%;
+    justify-content:space-between;
+    align-items: center;
+    margin:auto;
+
+    .category{
+        span{
+            color:var(--grey-color)
+        }
+        i{
+            color:var(--secondary-color);
+            margin-right: 10px;
+        }
+    }
+}
