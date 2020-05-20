@@ -10,7 +10,7 @@ const showcase = ()=>(
                 aliqua. Ut enim ad minim veniam, quis nostrud 
                 exercitation ullamco laboris
             </p>
-            <i class="fas fa-chevron-circle-right fa-3x"></i>
+            <i className="fas fa-chevron-circle-right fa-3x"></i>
         </div>
 
         <div className={styles.controls}>

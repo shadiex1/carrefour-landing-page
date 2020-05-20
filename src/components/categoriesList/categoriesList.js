@@ -20,7 +20,7 @@ class CategoriesList extends Component{
         return(
             <div className={styles.categoriesList}>
                 {this.state.categoriesList.map(category=>(
-                    <div className={styles.category}>
+                    <div key={category.title} className={styles.category}>
                         <i className={category.iconClass}></i>
                         <span>{category.title}</span>
                     </div>

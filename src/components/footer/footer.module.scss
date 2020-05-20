@@ -1,0 +1,19 @@
+.footer{
+    width: 80%;       
+     margin:auto;
+
+    .productInfo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            width: 33.3%;
+            .links{
+                    width: 80%;
+                .link{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}

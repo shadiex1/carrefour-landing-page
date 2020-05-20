@@ -25,27 +25,28 @@ class CategoriesOverview extends Component{
             {class:"fas fa-compass",title:"track order"}
         ]
     }
+    
     render(){
         return (
           <div className={styles.overview}>
             <h2>shopping by category</h2>
             <span>online shopping for erverything</span>
             <div className={styles.categoriesContainer}>
-            <i class="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left"></i>
                 {this.state.categories.map(category=>(
-                    <div className={styles.category}>
+                    <div key={category.title} className={styles.category}>
                         <div className={styles.imgContainer}>
                         <img src={category.img} alt={`${category.title} category`}/>
                         </div>
                         <span>{category.title}</span>
                         </div>
                 ))}
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
             </div>
                     <div className={styles.iconsOverview}>
                     
                         {this.state.icons.map(icon=>(
-                            <div className={styles.container}>
+                            <div key={icon.title} className={styles.container}>
                             <div className={styles.iconContainer}>
                             <i className={icon.class}></i>
                             </div>
