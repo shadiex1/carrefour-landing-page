@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import styles from "./navbar.module.scss";
-import CartIcon from "../cart/cart icon/cartIcon"
+import Cartdropdown from "../cartdropdown/cartdropdown"
 
 class navbar extends Component {
     state ={
         searchValue:"",
-        cartDropdown:false
+        cartDropdown:true
     }
 
     toggleCartHidden=()=>{
@@ -13,6 +13,7 @@ class navbar extends Component {
     }
     render(){
         return(
+            <React.Fragment>
             <nav className={styles.navbar}>
         
             <img src="./images/Layer 2.png" alt="Logo"/>
@@ -26,17 +27,24 @@ class navbar extends Component {
                 </div>
                 <div className={styles.button} onClick={this.toggleCartHidden}>
                 <i className="fas fa-shopping-cart"></i>
-                </div>
+               
+                </div> 
+                
                 <div style={{backgroundColor:"black"}} className={styles.button}>
-                    5
+                   {this.props.cart.length}
                 </div>
                 <div className={styles.button}>
                 <i className="fas fa-user-plus"></i>
                 Login
-                </div>
-            </div>
-        
+                </div>           
+
+            </div>                
+             
+        {this.state.cartDropdown ? <Cartdropdown items={this.props.cart}/> :null}
     </nav>
+    
+
+    </React.Fragment>
         )
     }
     

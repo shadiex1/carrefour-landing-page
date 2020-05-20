@@ -4,7 +4,18 @@ import products from "../../services/products-data";
 import Card from "../card/card";
 
 class ProductsOverview extends Component{
-    state=products
+    state={
+        products,
+        items:[]
+    }
+
+    addToCart=(item)=>{
+        let items=[...this.state.items]
+        items.push(item);
+        this.setState({
+            items:items
+        },console.log(this.state));        
+        }
     render(){
         const start=this.props.range[0]
         const end= this.props.range[1]
@@ -29,8 +40,10 @@ class ProductsOverview extends Component{
                
             </div>
              <div className={styles.products}>
-                     {this.state.all.slice(start,end).map(product=>(
+                     {this.state.products.all.slice(start,end).map(product=>(
                     <Card
+                    addItem={()=>this.props.addItem(product)}
+                    item={product}
                     key={product.id}
                      newPrice={product.newPrice}
                      oldPrice={product.oldPrice}

@@ -43,6 +43,7 @@
     }
     .buttons{
         display: flex;
+        position: relative;
         .button{
             padding:1rem;
             background-color: var(--secondary-color);
@@ -56,7 +57,11 @@
             &:first-of-type{
                 background-color: var(--primary-color);
             }
-            &:last-of-type{
+            &:nth-of-type(3){
+
+                background-color: var(--black-color);
+            }
+            &:nth-of-type(4){
                 background-color: var(--primary-color);
                 i{
                     margin-right: 5px;

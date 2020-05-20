@@ -1,0 +1,24 @@
+.cartDropdown{
+    position: absolute;
+    max-width: 340px;
+    max-height: 340px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+    top: 8rem;
+    left: 74rem;
+    z-index: 5;
+//   .empty-message{
+//     font-size:18px;
+//     margin:50px auto;
+//   }
+.cartItems{
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+    }
+
+}
