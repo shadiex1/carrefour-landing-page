@@ -4,15 +4,140 @@
 
     .productInfo{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         .logo{
-            width: 33.3%;
+            width: 33%;
             .links{
-                    width: 80%;
+                    display: grid;
+                    grid-template-columns: repeat(3,8rem);
+                    gap: .7rem;
+                    padding-left: 1rem;
                 .link{
                     list-style: none;
+                    color:var(--grey-color);
+                    font-size: 13px;
+                    text-align: left;
+                
                 }
+            }
+        }
+        .location{
+            background-color: var(--light-grey-color);
+            width: 18rem;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                margin-top: 1rem;
+            }
+            
+            i{
+                display: inline;
+                color:var(--primary-color);
+                font-size: 1.5rem;
+                margin-right: .6rem;
+            }
+            p{
+                display: inline;
+                color:#445252;
+                margin: auto;
+                span{
+                    color:var(--black-color);
+                    font-weight: bold;
+                }
+            }
+
+            .findBtn{
+                display: block;
+                margin: auto;
+                background-color: var(--primary-color);
+                color: var(--white-color);
+                width: 90%;
+                border: none;
+                height: 2rem;
+                font-weight: bold;
+            }
+
+        }
+        .subscribe{
+            background-color: var(--light-grey-color);
+            width: 18rem;
+            height: 6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                margin-top: 1rem;
+            }
+            
+            i{
+                display: inline;
+                color:var(--secondary-color);
+                font-size: 1.5rem;
+                margin-right: .6rem;
+            }
+            p{
+                display: inline;
+                color:#445252;
+                margin: auto;
+                span{
+                    color:var(--black-color);
+                    font-weight: bold;
+                }
+            }
+            .emailInput{
+                display: flex;
+                background-color: var(--white-color);
+                height: 2rem;
+                width: 90%;
+                align-items: center;
+                border-radius: 2px;
+                padding: 0 .5rem;
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,.21);
+                margin: auto;
+                    span{
+                        color:var(--secondary-color);
+                        font-weight: bold;
+                        font-size: 12px;
+                        cursor: pointer;
+                    }
+                input{
+                    border: none;
+                    width: 100%;
+                    font-size: 12px;
+                    color:#7e7272;
+                    font-weight: bold;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .copyrights{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        p{
+            color:#232828;
+            font-weight: bold;
+
+        }
+        div{
+            display: flex;
+            align-items: center;
+            p{
+            font-weight: bold;
+            color:#232828;
+            font-size: 12px;
+            }
+            
+            img{
+                margin-left: .6rem;
             }
         }
     }

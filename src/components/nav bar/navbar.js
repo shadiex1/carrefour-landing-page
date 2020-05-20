@@ -5,7 +5,7 @@ import Cartdropdown from "../cartdropdown/cartdropdown"
 class navbar extends Component {
     state ={
         searchValue:"",
-        cartDropdown:true
+        cartDropdown:false
     }
 
     toggleCartHidden=()=>{
