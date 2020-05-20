@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React, { Component,Suspense } from "react";
 import styles from "./navbar.module.scss";
-import Cartdropdown from "../cartdropdown/cartdropdown"
-
+const Cartdropdown = React.lazy(()=>import("../cartdropdown/cartdropdown"))
 class navbar extends Component {
     state ={
         searchValue:"",
@@ -40,7 +39,7 @@ class navbar extends Component {
 
             </div>                
              
-        {this.state.cartDropdown ? <Cartdropdown items={this.props.cart}/> :null}
+        {this.state.cartDropdown ? <Suspense fallback><Cartdropdown items={this.props.cart}/></Suspense> :null}
     </nav>
     
 
