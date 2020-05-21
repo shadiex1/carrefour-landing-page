@@ -6,9 +6,7 @@ const CartItem = props => (
     <img src={props.img} alt="item" />
     <div className={styles.itemDetails}>
       <span className={styles.name}>{props.title}</span>
-      <span className={styles.price}>
-        {props.price}
-      </span>
+      <span className={styles.price}>{props.price}</span>
     </div>
   </div>
 );

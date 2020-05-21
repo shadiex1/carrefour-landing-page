@@ -1,47 +1,54 @@
-.SideDrawer{
-    position: fixed;
-    display: none;
-    width:280px;
-    max-width: 70%;;
-    height: 100%;
-    left:0;
-    top:0;
-    z-index: 200;
-    background-color: var(--white-color);
-    padding:32px 16px;
-    transition: all 0.3  s ease-out;
+.SideDrawer {
+  position: fixed;
+  display: none;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: var(--white-color);
+  padding: 32px 16px;
+  transition: all 0.3 s ease-out;
 
-    .content{
-        
-        .categoriesList{
-            .category{
-                margin: auto;
-                padding: 2rem;
-
-                i{
-                    color:var(--secondary-color);
-                    margin-right: 1rem;
-                }
-
-                span{
-                    color:var(--grey-color);
-                }
-            }
+  .content {
+    .categoriesList {
+      .category {
+        margin: auto;
+        padding: 2rem;
+        &:hover {
+          span {
+            color: var(--primary-color);
+            cursor: pointer;
+            border-bottom: 2px solid var(--primary-color);
+          }
+          i {
+            color: var(--primary-color);
+          }
         }
+
+        i {
+          color: var(--secondary-color);
+          margin-right: 1rem;
+        }
+
+        span {
+          color: var(--grey-color);
+        }
+      }
     }
+  }
 }
 
-
-@media (max-width:800px){
-    .SideDrawer{
-        display: block;
-    }
+@media (max-width: 800px) {
+  .SideDrawer {
+    display: block;
+  }
 }
 
-.Open{
-    transform: translateX(0);
+.Open {
+  transform: translateX(0);
 }
-.Close{
-    transform: translateX(-100%);
+.Close {
+  transform: translateX(-100%);
 }
-
