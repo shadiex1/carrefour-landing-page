@@ -1,35 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf70dd954ac6623da71dc5a3b7125eff",
+    "revision": "3a9120f00be0b90c7088d82426c9c03c",
     "url": "/carrefour-landing-page/index.html"
   },
   {
-    "revision": "a3afa23980925adc35b6",
-    "url": "/carrefour-landing-page/static/css/3.7e7c3680.chunk.css"
+    "revision": "a3502877e78f1a844c00",
+    "url": "/carrefour-landing-page/static/css/3.640f1b23.chunk.css"
   },
   {
-    "revision": "e00c310748f24ac015bc",
-    "url": "/carrefour-landing-page/static/css/main.768bff42.chunk.css"
+    "revision": "27bb205246639751a85a",
+    "url": "/carrefour-landing-page/static/css/4.1af620c5.chunk.css"
   },
   {
-    "revision": "f2533b900e4dfe4225dd",
-    "url": "/carrefour-landing-page/static/js/2.8ebe65f6.chunk.js"
+    "revision": "58d88db16aa6efceb532",
+    "url": "/carrefour-landing-page/static/css/5.1775b9fc.chunk.css"
+  },
+  {
+    "revision": "60d6f6ff76d725e6c6fa",
+    "url": "/carrefour-landing-page/static/css/main.49f20553.chunk.css"
+  },
+  {
+    "revision": "4b16c5bc66cba6b86860",
+    "url": "/carrefour-landing-page/static/js/2.32baaa1d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/carrefour-landing-page/static/js/2.8ebe65f6.chunk.js.LICENSE.txt"
+    "url": "/carrefour-landing-page/static/js/2.32baaa1d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3afa23980925adc35b6",
-    "url": "/carrefour-landing-page/static/js/3.347c22cb.chunk.js"
+    "revision": "a3502877e78f1a844c00",
+    "url": "/carrefour-landing-page/static/js/3.c447aa11.chunk.js"
   },
   {
-    "revision": "e00c310748f24ac015bc",
-    "url": "/carrefour-landing-page/static/js/main.0f65df9e.chunk.js"
+    "revision": "27bb205246639751a85a",
+    "url": "/carrefour-landing-page/static/js/4.0a094606.chunk.js"
   },
   {
-    "revision": "77e9fe07abbc08c72ccb",
-    "url": "/carrefour-landing-page/static/js/runtime-main.5ba7e8e9.js"
+    "revision": "58d88db16aa6efceb532",
+    "url": "/carrefour-landing-page/static/js/5.81a7b3da.chunk.js"
+  },
+  {
+    "revision": "60d6f6ff76d725e6c6fa",
+    "url": "/carrefour-landing-page/static/js/main.dfdbccc4.chunk.js"
+  },
+  {
+    "revision": "9081c6a6bcd02aa7037c",
+    "url": "/carrefour-landing-page/static/js/runtime-main.f7aaca12.js"
   },
   {
     "revision": "5334e060cf9fd0efce798220b5e77c12",
@@ -72,6 +88,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carrefour-landing-page/static/media/Layer 22.c6b29f4e.png"
   },
   {
+    "revision": "d6592100eb9834c17cb181e7707e8607",
+    "url": "/carrefour-landing-page/static/media/Layer 23.d6592100.png"
+  },
+  {
+    "revision": "c2b2f74cf232c24e5097259cbd6c38b1",
+    "url": "/carrefour-landing-page/static/media/Layer 24.c2b2f74c.png"
+  },
+  {
+    "revision": "eaaa066af7d4ff7eb72906a2262b3056",
+    "url": "/carrefour-landing-page/static/media/Layer 25.eaaa066a.png"
+  },
+  {
+    "revision": "0d4299c6a362f2d8d78ab6a41db7b183",
+    "url": "/carrefour-landing-page/static/media/Layer 26.0d4299c6.png"
+  },
+  {
     "revision": "d2942f59ed70e6c199660e70355f4c45",
     "url": "/carrefour-landing-page/static/media/Layer 27.d2942f59.png"
   },
@@ -102,6 +134,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "00eaae88006c00585f06baf0053dec15",
     "url": "/carrefour-landing-page/static/media/Layer 34.00eaae88.png"
+  },
+  {
+    "revision": "973c3b5950e0fa8f286c628e90c70c9e",
+    "url": "/carrefour-landing-page/static/media/Layer 35.973c3b59.png"
+  },
+  {
+    "revision": "ad4707a86317a2263c4e59af4eb062a8",
+    "url": "/carrefour-landing-page/static/media/Layer 37.ad4707a8.png"
+  },
+  {
+    "revision": "448c8eccd599d9e409107f2f7776ea89",
+    "url": "/carrefour-landing-page/static/media/Layer 43.448c8ecc.png"
+  },
+  {
+    "revision": "31d5726e78501c0da019a758a38f61e8",
+    "url": "/carrefour-landing-page/static/media/Layer 7.31d5726e.png"
   },
   {
     "revision": "3cc69c319343791251bd3e3af6f6de84",

@@ -1,0 +1,2 @@
+(this["webpackJsonpnasnav-task"]=this["webpackJsonpnasnav-task"]||[]).push([[5],{63:function(a,e,r){a.exports={DrawerToggle:"sidebarToggler_DrawerToggle__sKj_X",bar:"sidebarToggler_bar__8tWAJ"}},64:function(a,e,r){"use strict";r.r(e);var s=r(0),t=r.n(s),n=r(63),c=r.n(n);e.default=function(a){return t.a.createElement("div",{className:c.a.DrawerToggle,onClick:a.clicked},t.a.createElement("div",{className:c.a.bar}),t.a.createElement("div",{className:c.a.bar}),t.a.createElement("div",{className:c.a.bar}))}}}]);
+//# sourceMappingURL=5.81a7b3da.chunk.js.map
