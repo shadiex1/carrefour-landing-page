@@ -39,15 +39,8 @@
     }
 }
 
-// @media screen and (max-width:770px){
-//     .banner{
-//         justify-content: space-between;
-//         padding: 0; 
 
-//     }
-// }
-
-@media screen and (max-width: 782px) { 
+@media screen and (max-width: 800px) { 
     .banner{
         padding: 0;
         justify-content: space-between;
@@ -71,4 +64,16 @@
         }
     }
     
+}
+
+@media screen and (max-width:500px){
+    .banner{
+        flex-direction: column;
+        height: 5rem;
+        justify-content: center;
+
+        .creditcards{
+            margin-bottom: 1rem;
+        }
+    }
 }

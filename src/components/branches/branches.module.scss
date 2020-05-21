@@ -4,16 +4,17 @@
     text-align: center;
     width: 100%;
     position: relative;       
-     overflow-x: hidden;
+
 
     .watermark{
-        display: block;
         width: 14rem;
         position: absolute;
+        overflow: hidden;
         top: -10%;
-        left: 86%;
+        left: 85%;
         opacity: 0.9;
         clip-path: polygon(0 13%, 100% 20%, 100% 100%, 75% 100%, 0% 100%);
+        display: none;
 
     }
 
@@ -28,7 +29,7 @@
     }
     .branchContainer{       
 
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,7 @@
     
 
 }
-.branch:nth-of-type(1){background: url("/images/Layer 23.png") center no-repeat;}
+.branch:nth-of-type(1){background: url("/images/Layer 23.png") center ;}
 .branch:nth-of-type(2){background: url("/images/Layer 24.png") center ;}
 .branch:nth-of-type(3){background: url("/images/Layer 25.png") center no-repeat;}
 .branch:nth-of-type(4){background: url("/images/Layer 26.png") center ;}
@@ -59,7 +60,7 @@
 
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
 .branches{
     .branchContainer{
         flex-wrap: wrap;

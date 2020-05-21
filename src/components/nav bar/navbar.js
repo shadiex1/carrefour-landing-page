@@ -36,7 +36,9 @@ class navbar extends Component {
                 <div className={styles.button}>
                 <i className="fas fa-user-plus"></i>
                 Login
-                </div>           
+                </div>       
+                
+                    
 
             </div>                
              

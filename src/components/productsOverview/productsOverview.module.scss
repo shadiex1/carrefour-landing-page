@@ -36,9 +36,15 @@
   margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(4, minmax(2rem, 1fr));
+  
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width:1000px){
+  .products{
+    grid-template-columns: repeat(3, minmax(.5rem, 1fr));
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
   .productsOverview {
     flex-direction: column;
     text-align: center;
@@ -59,4 +65,21 @@
     gap: 6rem;
 
   }
+}
+
+@media screen and (max-width:500px){
+  .productsOverview{
+    .productsCategories{
+      ul{
+        li{
+          font-size: 12px;
+          margin: .3rem;
+        }
+      }
+    }
+  }.products{
+      grid-template-columns: repeat(1,1fr);
+      justify-items: center;
+      gap: 3rem;
+    }
 }

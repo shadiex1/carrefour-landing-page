@@ -2,6 +2,7 @@
     width: 80%;
     margin: auto;
     margin-top: 3rem;
+    
 
     h2{
         color:var(--black-color);
@@ -82,6 +83,7 @@
             text-align: center;
             display: flex;
             align-items: center;
+            margin-right:1rem ;
             i{
                 color:var(--white-color);
                 font-size: 1.3rem;
@@ -108,7 +110,7 @@
     }
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:1000px){
     .overview{
         h2{
             text-align: center;
@@ -119,15 +121,8 @@
         
         
         .categoriesContainer{
-            i:first-of-type{
-                margin-right: 0.5rem;
-                transform: translatey(300px);
-            }
-            i:last-of-type{
-                font-size: 1.5rem;
-                transform: translate(23px,-250px);
-               
-
+            i{
+                display: none;
             }
         .category{
             width: 40%;
@@ -158,4 +153,12 @@
 
     
 
+}
+@media screen and (max-width:500px){
+    .overview{
+        span{
+            font-size: 14px;
+            margin-left: 1.5rem;
+        }
+    }
 }

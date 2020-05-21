@@ -18,7 +18,7 @@ class App extends Component {
     addItemToCart=(item)=>{
       const cartItems=[...this.state.cartItems]
       cartItems.push(item);
-      this.setState({cartItems},console.log(this.state))
+      this.setState({cartItems})
     }
   render(){
      return (
