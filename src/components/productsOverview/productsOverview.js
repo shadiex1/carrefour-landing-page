@@ -21,7 +21,7 @@ class ProductsOverview extends Component{
         const end= this.props.range[1]
         return(
             <React.Fragment>
-                <div style={{backgroundColor:`${this.props.grey ? "var(--light-grey-color)":null}`}} >
+                <div style={{backgroundColor:`${this.props.grey ? "var(--light-grey-color)":null}`,margin:"auto",width:"100%"}} >
             <div className={styles.productsOverview}>
                 <div className={styles.description}>
                     <h3>{this.props.header}</h3>

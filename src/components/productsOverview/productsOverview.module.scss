@@ -1,42 +1,62 @@
-.productsOverview{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem auto;
-   
+.productsOverview {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
 
-    .description{
-        h3{
-            color:var(--black-color);
-            font-weight: 700;
-
-        }
-        span{
-            color:var(--secondary-color);
-        }
+  .description {
+    h3 {
+      color: var(--black-color);
+      font-weight: 700;
     }
-    .productsCategories{
-        ul{
-            .active{
-                    border-bottom:3px solid var(--primary-color)
-                }
-            li{
-                list-style-type: none;
-                display: inline-block;
-                margin: 1rem;
-                color:var(--black-color);
-                font-weight: 300;
-                font-size: 13px;
-                cursor: pointer;
-                
-            }
-        }
+    span {
+      color: var(--secondary-color);
     }
+  }
+  .productsCategories {
+    ul {
+      display: flex;
+      .active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 1rem;
+        color: var(--black-color);
+        font-weight: 300;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+  }
 }
-.products{
-    width: 70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-bottom: 3rem;
+.products {
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(2rem, 1fr));
+}
+
+@media screen and (max-width: 700px) {
+  .productsOverview {
+    flex-direction: column;
+    text-align: center;
+
+    .productsCategories {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+  .products{
+    grid-template-columns: repeat(2, minmax(.5rem, 1fr));
+    gap: 6rem;
+
+  }
 }

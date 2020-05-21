@@ -5,7 +5,9 @@
     align-items: center;
     margin:auto;
 
+
     .category{
+       
         span{
             color:var(--grey-color)
         }
@@ -13,5 +15,23 @@
             color:var(--secondary-color);
             margin-right: 10px;
         }
+    }
+}
+
+@media screen and (max-width:1000px){
+    .category{
+            span{
+                font-size: 10px;
+            }
+            i{
+                font-size: 12px;
+                margin-right:5px ;
+            }
+        }
+        }
+
+@media screen and (max-width:700px){
+    .category{
+        
     }
 }

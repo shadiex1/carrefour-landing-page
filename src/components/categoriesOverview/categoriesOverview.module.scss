@@ -14,12 +14,13 @@
     }
 
     .categoriesContainer{
+        width: 100%;
         display: flex;
         margin: auto;
         justify-content: center;
-        margin-top: 2rem;                    
         text-align: center;
         align-items: center;
+        flex-wrap: wrap;
 
         i:first-of-type{
             font-size: 1.5rem;
@@ -35,23 +36,25 @@
         }
 
         .category{
+            width: 15.6%;
                 span{
                     color:var(--black-color);
                     font-weight: 700;
-                    font-size: 13;
+                    font-size: 10;
+                    text-align: center;
+                    margin-left: 2rem;
                 }
             .imgContainer{
-                    background-color: #f6f8f9;
-                    width: 8rem;
-                    height: 8rem;
+                    background-color: var(--light-grey-color);
+                    width: 80%;
+                    height: 10rem;
                     margin: 2rem;
                     border-radius: 50%;
                     overflow: hidden;
+                    display: flex;
                 img{
-                object-fit: contain;
-                display: block;
-                width: 90%;
-                height: 90%;
+                max-width: 90%;
+                height: 70%;
                 margin: auto;
             }
             }
@@ -62,11 +65,13 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         width: 90%;
         margin: 4rem auto;
             .container{display: flex;
                         align-items: center;
                         justify-content: center;
+                        
             }
         .iconContainer{
             background-color: var(--primary-color);
@@ -75,7 +80,6 @@
             height: 3.5rem;
             padding:.5rem;
             text-align: center;
-            margin-right: 1rem;
             display: flex;
             align-items: center;
             i{
@@ -97,8 +101,61 @@
 
                 span{
                     color:var(--grey-color);
-                    font-size: 14px;
+                    font-size: 10px;
+                    
                 }
         }
     }
+}
+
+@media screen and (max-width:700px){
+    .overview{
+        h2{
+            text-align: center;
+        }
+        span{
+            margin-left: 4rem;
+        }
+        
+        
+        .categoriesContainer{
+            i:first-of-type{
+                margin-right: 0.5rem;
+                transform: translatey(300px);
+            }
+            i:last-of-type{
+                font-size: 1.5rem;
+                transform: translate(23px,-250px);
+               
+
+            }
+        .category{
+            width: 40%;
+            margin-top: 2rem;
+        }
+    }
+    .iconsOverview{
+        .container{
+            width: 50%;
+        }
+        .iconContainer{
+            margin: 0 1rem;
+
+        }
+        .description{
+            margin-bottom: 1rem;
+            h4{
+                text-align: center;
+                font-size: 15px;
+            }
+            span{
+                margin: auto;
+                padding: .5rem;
+            }
+        }
+    }
+    }
+
+    
+
 }

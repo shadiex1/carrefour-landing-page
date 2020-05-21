@@ -17,7 +17,7 @@ class navbar extends Component {
         
             <img src="./images/Layer 2.png" alt="Logo"/>
             <div className={styles.searchBar}>
-                <span>All Category <i className="fas fa-chevron-down"></i> </span>
+                <span>All Categories <i className="fas fa-chevron-down"></i> </span>
                 <input type="text" placeholder="Search"/>
             </div>
             <div className={styles.buttons}>
@@ -26,7 +26,8 @@ class navbar extends Component {
                 </div>
                 <div className={styles.button} onClick={this.toggleCartHidden}>
                 <i className="fas fa-shopping-cart"></i>
-               
+                       {this.state.cartDropdown ? <Suspense fallback><Cartdropdown items={this.props.cart}/></Suspense> :null}
+
                 </div> 
                 
                 <div style={{backgroundColor:"black"}} className={styles.button}>
@@ -39,7 +40,6 @@ class navbar extends Component {
 
             </div>                
              
-        {this.state.cartDropdown ? <Suspense fallback><Cartdropdown items={this.props.cart}/></Suspense> :null}
     </nav>
     
 
