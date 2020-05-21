@@ -18,24 +18,7 @@
         }
     }
 
-    .DrawerToggle {
-        width: 40px;
-        height: 100%;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px 0;
-        box-sizing: border-box;
-        cursor: pointer;
-    }
-    
-    .DrawerToggle .bar {
-        width: 90%;
-        height: 3px;
-        background-color: var(--secondary-color);
-        margin: 1px 5px ;
-    }
+  
         
         
         
@@ -44,11 +27,7 @@
 
 
 
-// @media (min-width: 500px) {
-//             .DrawerToggle {
-//                 display: none;
-//             }
-//         }
+
 @media screen and (max-width:1000px){
     .category{
             span{
@@ -61,3 +40,8 @@
         }
         }
 
+@media screen and (max-width:800px){
+    .categoriesList{
+        display: none;
+    }
+}

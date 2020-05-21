@@ -64,11 +64,11 @@
             i:first-of-type{
                 font-size: 17px;
             }
-            &:first-of-type{
+            &:nth-of-type(2){
                 background-color: var(--primary-color);
             }
             &:nth-of-type(3){
-                 background-color: var(--black-color);
+                 background-color: var(--secondary-color);
             }
             &:nth-of-type(4){
                 background-color: var(--primary-color);

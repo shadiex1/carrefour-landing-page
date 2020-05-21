@@ -1,5 +1,6 @@
 import React, { Component,Suspense } from "react";
 import styles from "./navbar.module.scss";
+import SidebarToggler from "../sidebarToggler/sidebarToggler"
 const Cartdropdown = React.lazy(()=>import("../cartdropdown/cartdropdown"))
 class navbar extends Component {
     state ={
@@ -21,6 +22,7 @@ class navbar extends Component {
                 <input type="text" placeholder="Search"/>
             </div>
             <div className={styles.buttons}>
+            <SidebarToggler clicked={this.props.drawerToggleClicked}/>
                 <div className={styles.button}>
                 <i className="fas fa-search"></i>
                 </div>
@@ -30,15 +32,16 @@ class navbar extends Component {
 
                 </div> 
                 
-                <div style={{backgroundColor:"black"}} className={styles.button}>
+                <div  className={styles.button}>
                    {this.props.cart.length}
                 </div>
                 <div className={styles.button}>
                 <i className="fas fa-user-plus"></i>
                 Login
-                </div>       
-                
-                    
+                </div>  
+                     
+
+
 
             </div>                
              

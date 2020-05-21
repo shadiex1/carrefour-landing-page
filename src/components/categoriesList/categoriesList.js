@@ -1,34 +1,24 @@
 import React, { Component } from "react";
 import styles from "./categoriesList.module.scss";
+import categoriesListData from "../../services/categoriesListData"
 
 class CategoriesList extends Component {
-  state = {
-    categoriesList: [
-      { iconClass: "fas fa-mobile", title: "Smart Phone" },
-      { iconClass: "fas fa-shopping-basket", title: "SuperMarket" },
-      { iconClass: "fas fa-grin-alt", title: "Babys" },
-      { iconClass: "fas fa-star", title: "Girls" },
-      { iconClass: "fas fa-apple-alt", title: "Health Care" },
-      { iconClass: "fas fa-futbol", title: "Baby World" },
-      { iconClass: "fas fa-tshirt", title: "Clothes" },
-      { iconClass: "fas fa-pizza-slice", title: "Food" }
-    ]
-  };
+  state = categoriesListData
+  ;
   render() {
     return (
-      <div className={styles.categoriesList}>
-        {this.state.categoriesList.map(category => (
-          <div key={category.title} className={styles.category}>
-            <i className={category.iconClass}></i>
-            <span>{category.title}</span>
+      <React.Fragment>
+        
+          <div className={styles.categoriesList}>
+            {this.state.map(category => (
+              <div key={category.title} className={styles.category}>
+                <i className={category.iconClass}></i>
+                <span>{category.title}</span>
+              </div>
+            ))}
           </div>
-        ))}
-        <div className={styles.DrawerToggle}>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-        </div>
-      </div>
+        
+      </React.Fragment>
     );
   }
 }

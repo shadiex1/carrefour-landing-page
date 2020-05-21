@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Banner from "./components/banner/banner"
 import Navbar from "./components/nav bar/navbar";
+import SideDrawer from "./components/sideDrawer/sideDrawer";
 import CategoriesList from "./components/categoriesList/categoriesList";
 import Showcase from "./components/showcase/showcase";
 import CategoriesOverview from "./components/categoriesOverview/categoriesOverview";
@@ -12,9 +13,15 @@ import ProductsOverviewExtension from "./components/productsOverviewExtension/pr
 
 class App extends Component {
   state={
-      cartItems:[]
+      cartItems:[],
+      showSideDrawer:false
     }
-    
+    sideDrawerClosedHandler=()=>{
+      this.setState({showSideDrawer:false})
+  }
+  sideDrawerToggleHandler =()=>{
+    this.setState((prevState) => {return {showSideDrawer: !prevState.showSideDrawer}})
+}
     addItemToCart=(item)=>{
       const cartItems=[...this.state.cartItems]
       cartItems.push(item);
@@ -24,8 +31,9 @@ class App extends Component {
      return (
         <div>
           <Banner />
-          <Navbar cart={this.state.cartItems} />
-          <CategoriesList />
+          <Navbar cart={this.state.cartItems} drawerToggleClicked={this.sideDrawerToggleHandler} />
+          <SideDrawer  open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler}/>
+          <CategoriesList minimize={this.state.showSideDrawer}/>
           <Showcase />
           <CategoriesOverview />
           <Branches />
