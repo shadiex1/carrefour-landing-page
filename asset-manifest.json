@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carrefour-landing-page/static/css/main.451308b7.chunk.css",
+    "main.css": "/carrefour-landing-page/static/css/main.fe280113.chunk.css",
     "main.js": "/carrefour-landing-page/static/js/main.0f65df9e.chunk.js",
     "main.js.map": "/carrefour-landing-page/static/js/main.0f65df9e.chunk.js.map",
     "runtime-main.js": "/carrefour-landing-page/static/js/runtime-main.5ba7e8e9.js",
@@ -11,10 +11,10 @@
     "static/js/3.347c22cb.chunk.js": "/carrefour-landing-page/static/js/3.347c22cb.chunk.js",
     "static/js/3.347c22cb.chunk.js.map": "/carrefour-landing-page/static/js/3.347c22cb.chunk.js.map",
     "index.html": "/carrefour-landing-page/index.html",
-    "precache-manifest.3a7296ccc7be8a51873a8a69d301d9f7.js": "/carrefour-landing-page/precache-manifest.3a7296ccc7be8a51873a8a69d301d9f7.js",
+    "precache-manifest.da57e7b78903aa390cc8484e0d1a2613.js": "/carrefour-landing-page/precache-manifest.da57e7b78903aa390cc8484e0d1a2613.js",
     "service-worker.js": "/carrefour-landing-page/service-worker.js",
     "static/css/3.7e7c3680.chunk.css.map": "/carrefour-landing-page/static/css/3.7e7c3680.chunk.css.map",
-    "static/css/main.451308b7.chunk.css.map": "/carrefour-landing-page/static/css/main.451308b7.chunk.css.map",
+    "static/css/main.fe280113.chunk.css.map": "/carrefour-landing-page/static/css/main.fe280113.chunk.css.map",
     "static/js/2.8ebe65f6.chunk.js.LICENSE.txt": "/carrefour-landing-page/static/js/2.8ebe65f6.chunk.js.LICENSE.txt",
     "static/media/Layer 10.png": "/carrefour-landing-page/static/media/Layer 10.5334e060.png",
     "static/media/Layer 11.png": "/carrefour-landing-page/static/media/Layer 11.54c6c585.png",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ba7e8e9.js",
     "static/js/2.8ebe65f6.chunk.js",
-    "static/css/main.451308b7.chunk.css",
+    "static/css/main.fe280113.chunk.css",
     "static/js/main.0f65df9e.chunk.js"
   ]
 }
