@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/carrefour-landing-page/precache-manifest.237f41291a6bea359ebc2f862dd9663c.js"
+  "/carrefour-landing-page/precache-manifest.3a7296ccc7be8a51873a8a69d301d9f7.js"
 );
 
 self.addEventListener('message', (event) => {
